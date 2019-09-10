@@ -61,11 +61,11 @@ int main(int argc, char* argv[])
 	m_nChangedRatio=0.015;
 
 	char inPath[100], outPath[100], localPath[100], statPath[100], transPath[100];
-	sprintf(inPath, "/mirror/data/landsat8.bin");
-	sprintf(outPath, "/mirror/proc/landsat8_classified_MPI_%d.bin", m_nProcessor-1);
-	sprintf(localPath, "/home/cluster/landsat8.bin");
-	sprintf(statPath, "/mirror/proc/landsat8_classified_MPI_%d.txt", m_nProcessor-1);
-	sprintf(transPath, "/mirror/proc/landsat8_transfer.txt");
+	sprintf(inPath, "/mirror/data/landsat8.bin"); // change it to a correct path in a master node
+	sprintf(outPath, "/mirror/proc/landsat8_classified_MPI_%d.bin", m_nProcessor-1); // change it to a correct path in a master node
+	sprintf(localPath, "/home/cluster/landsat8.bin"); // change it to a correct path in each slave node
+	sprintf(statPath, "/mirror/proc/landsat8_classified_MPI_%d.txt", m_nProcessor-1); // change it to a correct path in a master node
+	sprintf(transPath, "/mirror/proc/landsat8_transfer.txt"); // change it to a correct path in a master node
 	
 	// for the sample data, sentinel2a.bin (not included to the repository because of too large volume)
 	/*m_nRow=30978;
