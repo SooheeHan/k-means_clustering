@@ -34,9 +34,9 @@ int main()
 	m_nChangedRatio=0.015;
 	
 	char inPath[100], outPath[100], statPath[100];
-	sprintf(inPath, "/mirror/data/landsat8.bin");
-	sprintf(outPath, "/mirror/proc/landsat8_classified_OpenMP.bin");
-	sprintf(statPath, "/mirror/proc/landsat8_classified_OpenMP.txt");
+	sprintf(inPath, "/mirror/data/landsat8.bin"); // change it to a correct path
+	sprintf(outPath, "/mirror/proc/landsat8_classified_OpenMP.bin"); // change it to a correct path
+	sprintf(statPath, "/mirror/proc/landsat8_classified_OpenMP.txt"); // change it to a correct path
 
 	// for the sample data, sentinel2a.bin (not included to the repository because of too large volume)
 	/*m_nRow=30978;
