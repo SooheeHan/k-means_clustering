@@ -29,8 +29,8 @@ int main()
 
 	char inPath[100], outPath[100], statPath[100];
 	sprintf(inPath, "/mirror/data/landsat8.bin");
-	sprintf(outPath, "/mirror/proc/landsat8_classified_squential.bin");
-	sprintf(statPath, "/mirror/proc/landsat8_classified_squential.txt");
+	sprintf(outPath, "/mirror/proc/landsat8_classified_sequential.bin");
+	sprintf(statPath, "/mirror/proc/landsat8_classified_sequential.txt");
 
 	// for the sample data, sentinel2a.bin (not included to the repository because of too large volume)
 	/*m_nRow=30978;
